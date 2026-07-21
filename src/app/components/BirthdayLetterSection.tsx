@@ -204,7 +204,7 @@ export default function BirthdayLetterSection({ onBackToMenu }: BirthdayLetterPr
                 <p className="text-[#7a3050] text-xs md:text-sm leading-relaxed text-center font-normal whitespace-pre-line mt-4" style={{ fontFamily: "var(--font-mitr), 'Mitr', sans-serif" }}>
                   HAPPY BIRTHDAY TO MY FAVORITE PERSON. 🌻🫶🏻
                   หนูขอให้พี่เต้ยเอนจอยกับการใช้ชีวิตในแต่ละวัน
-                  มีความสุขมากกกกกในทุกๆวัน กินอิ่ม นอนหลับ ตื่นมามีแต่รอยยิ้ม และขอให้พี่หลงรักหนูมากกกในทุกๆวันด้วย 555555555 {"\n"}
+                  มีความสุขมากกกกกในทุกๆวัน กินอิ่ม นอนหลับ {"\n"}ตื่นมามีแต่รอยยิ้ม และขอให้พี่หลงรักหนูมากกก{"\n"}ในทุกๆวันด้วย 555555555 {"\n"}
                 </p>
               </motion.div>
 
