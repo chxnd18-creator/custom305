@@ -197,14 +197,15 @@ export default function BirthdayLetterSection({ onBackToMenu }: BirthdayLetterPr
                   </svg>
                 </div>
 
-                {/* เนื้อความจดหมาย เอา font-boldออกแล้ว */}
-                <h3 className="text-[#c2547a] text-sm md:text-base mb-3 tracking-wide text-center select-none" style={{ fontFamily: "var(--font-itim), 'Itim', cursive" }}>
+                {/* เนื้อความจดหมายปรับขนาดตัวอักษรให้เล็กลง */}
+                <h3 className="text-[#c2547a] text-xs md:text-sm mb-3 tracking-wide text-center select-none" style={{ fontFamily: "var(--font-itim), 'Itim', cursive" }}>
 
                 </h3>
-                <p className="text-[#7a3050] text-sm md:text-base leading-relaxed text-center font-normal whitespace-pre-line mt-4" style={{ fontFamily: "var(--font-mitr), 'Mitr', sans-serif" }}>
-            HAPPY BIRTHDAY TO MY FAVORITE PERSON. 🌻🫶🏻
-หนูขอให้พี่เต้ยเอนจอยกับการใช้ชีวิตในแต่ละวัน
-มีความสุขมากกกกกในทุกๆวัน กินอิ่ม นอนหลับ ตื่นมามีแต่รอยยิ้ม และขอให้พี่หลงรักหนูมากกกในทุกๆวันด้วย 555555555 {"\n"}</p>
+                <p className="text-[#7a3050] text-xs md:text-sm leading-relaxed text-center font-normal whitespace-pre-line mt-4" style={{ fontFamily: "var(--font-mitr), 'Mitr', sans-serif" }}>
+                  HAPPY BIRTHDAY TO MY FAVORITE PERSON. 🌻🫶🏻
+                  หนูขอให้พี่เต้ยเอนจอยกับการใช้ชีวิตในแต่ละวัน
+                  มีความสุขมากกกกกในทุกๆวัน กินอิ่ม นอนหลับ ตื่นมามีแต่รอยยิ้ม และขอให้พี่หลงรักหนูมากกกในทุกๆวันด้วย 555555555 {"\n"}
+                </p>
               </motion.div>
 
               {/* 2. กรอบรูปโพลารอยด์คู่ — ลากเลื่อนออกจากจดหมายได้ */}
