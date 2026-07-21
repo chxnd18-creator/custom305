@@ -3,11 +3,10 @@ import { useState, useEffect } from 'react';
 import { motion, useMotionValue, useTransform, useAnimation, AnimatePresence } from 'framer-motion';
 
 const INITIAL_PHOTOS = [
-  // 🎯 จุดแก้ไข: นำ useContain: true ออก เพื่อให้กลับไปจัดวางด้วยสัดส่วนเต็มกรอบปกติเหมือนรูปอื่น ๆ ครับ
   { id: 1, src: "/images/couple5.jpeg", caption: "หนูรักพี่ 🫶🏻" },
   { id: 2, src: "/images/couple4.jpeg", caption: "อยากไปเที่ยวกับพี่อีกเยอะๆเลย" },
   { id: 3, src: "/images/couple3.jpeg", caption: "หนูขอเป็นคนซ้อนท้ายตลอดไป 🛵💨 5555", objectTop: true }, 
-  { id: 4, src: "/images/couple2.jpeg", caption: "ไว้ไปกินของอร่อยๆด้วยกันอีกนะ 🍻🍱" },
+  { id: 4, src: "/images/couple2.jpeg", caption: "ไว้ไปกินของอร่อยๆด้วยกันอีกนะ 🍻🍱", objectTop: true }, // 🎯 จุดแก้ไข: เพิ่ม objectTop: true ให้รูป couple2.jpeg ขยับขึ้นส่วนบน
   { id: 5, src: "/images/couple1.jpeg", caption: "สุขสันต์วันเกิดครับ ✨🌻" },
 ];
 
