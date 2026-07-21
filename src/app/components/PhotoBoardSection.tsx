@@ -6,7 +6,7 @@ const INITIAL_PHOTOS = [
   { id: 1, src: "/images/couple5.jpeg", caption: "หนูรักพี่ 🫶🏻" },
   { id: 2, src: "/images/couple4.jpeg", caption: "อยากไปเที่ยวกับพี่อีกเยอะๆเลย" },
   { id: 3, src: "/images/couple3.jpeg", caption: "หนูขอเป็นคนซ้อนท้ายตลอดไป 🛵💨 5555", objectTop: true }, 
-  { id: 4, src: "/images/couple2.jpeg", caption: "ไว้ไปกินของอร่อยๆด้วยกันอีกนะ 🍻🍱", objectTop: true }, // 🎯 จุดแก้ไข: เพิ่ม objectTop: true ให้รูป couple2.jpeg ขยับขึ้นส่วนบน
+  { id: 4, src: "/images/couple2.jpeg", caption: "ไว้ไปกินของอร่อยๆด้วยกันอีกนะ 🍻🍱", style: { objectPosition: "center 35%" } }, // 🎯 จุดแก้ไข: ปรับตำแหน่งรูป couple2.jpeg ลงมานิดนึงจาก object-top
   { id: 5, src: "/images/couple1.jpeg", caption: "สุขสันต์วันเกิดครับ ✨🌻" },
 ];
 
@@ -67,12 +67,15 @@ function SwipeCard({ photo, index, total, onSwipe }: { photo: any; index: number
         <img 
           src={photo.src} 
           alt="Birthday Memory" 
+          style={photo.style}
           className={`w-full h-full ${
             photo.useContain 
               ? "object-contain bg-black" 
-              : photo.objectTop 
+              : photo.objectTop && !photo.style
                 ? "object-cover object-top" 
-                : "object-cover object-center"
+                : photo.style 
+                  ? "object-cover" 
+                  : "object-cover object-center"
           }`} 
         />
       </div>
