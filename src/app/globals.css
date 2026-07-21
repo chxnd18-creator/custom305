@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fff0f5;
+  --foreground: #7a3050;
+  --font-heading: var(--font-itim);
+  --font-body: var(--font-mitr);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-mitr);
+  --font-display: var(--font-itim);
+}
+
+/* ปิด dark mode override เพื่อคงธีมชมพูพาสเทลตลอด */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-mitr), 'Mitr', 'Sarabun', sans-serif;
+}
+
+/* ตัวหนังสือหัวข้อใช้ Itim ทั้งหมด */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-itim), 'Itim', cursive;
+}
